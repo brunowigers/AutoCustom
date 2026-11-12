@@ -1,0 +1,619 @@
+/* VARIÁVEIS DE CORES - TEMA AUTOMOTIVO DARK & PERFORMANCE */
+:root {
+    --bg-dark: #121216;
+    --bg-darker: #0c0c0f;
+    --bg-card: #1c1d24;
+    --accent-red: #dc2626;
+    --accent-red-hover: #b91c1c;
+    --accent-gold: #f59e0b;
+    --text-primary: #f3f4f6;
+    --text-secondary: #9ca3af;
+    --border-color: #2e323d;
+    --terminal-green: #10b981;
+}
+
+/* RESET & CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.text-red {
+    color: var(--accent-red);
+}
+
+.bg-darker {
+    background-color: var(--bg-darker);
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: rgba(12, 12, 15, 0.95);
+    border-bottom: 2px solid var(--accent-red);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+.logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.35rem;
+    color: var(--text-primary);
+    letter-spacing: 1px;
+}
+
+.logo-icon {
+    font-size: 1.6rem;
+    color: var(--accent-red);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--text-primary);
+}
+
+.btn-nav-cta {
+    background-color: var(--accent-red);
+    color: #fff !important;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: background 0.3s !important;
+}
+
+.btn-nav-cta:hover {
+    background-color: var(--accent-red-hover);
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    padding: 110px 0 90px;
+    background: radial-gradient(circle at top right, #2a1215 0%, var(--bg-dark) 60%);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.badge-gold {
+    display: inline-block;
+    color: var(--accent-gold);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+    background: rgba(245, 158, 11, 0.1);
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 680px;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--accent-red);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 15px 28px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-red-hover);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 15px 28px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    transition: border-color 0.3s, background 0.3s;
+}
+
+.btn-secondary:hover {
+    border-color: var(--text-primary);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* ESTATÍSTICAS */
+.stats-bar {
+    padding: 40px 0;
+    background-color: var(--bg-darker);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.stat-card {
+    background-color: var(--bg-card);
+    padding: 22px;
+    border-radius: 8px;
+    border-top: 3px solid var(--accent-red);
+}
+
+.stat-card h3 {
+    font-size: 1.8rem;
+    color: var(--accent-gold);
+    margin-bottom: 4px;
+}
+
+.stat-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* SEÇÕES GERAIS */
+.section {
+    padding: 80px 0;
+}
+
+.section-header {
+    margin-bottom: 45px;
+}
+
+.section-header .subtitle {
+    color: var(--accent-red);
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.section-desc {
+    color: var(--text-secondary);
+    margin-top: 8px;
+}
+
+/* DIFERENCIAIS */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.feature-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-red);
+}
+
+.feature-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+}
+
+/* TABELA DE SERVIÇOS */
+.table-responsive {
+    overflow-x: auto;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+
+.services-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--bg-card);
+    text-align: left;
+}
+
+.services-table th {
+    background-color: #16171d;
+    color: var(--accent-gold);
+    padding: 16px 20px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.services-table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+}
+
+.services-table td strong {
+    color: var(--text-primary);
+}
+
+.services-table tr:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.services-table .price {
+    color: var(--accent-gold);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.tag {
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.tag-perf { background: rgba(220, 38, 38, 0.2); color: #f87171; }
+.tag-exh  { background: rgba(245, 158, 11, 0.2); color: #fbbf24; }
+.tag-est  { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+.tag-susp { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+.tag-tech { background: rgba(168, 85, 247, 0.2); color: #c084fc; }
+
+/* PROJETOS */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-badge {
+    display: inline-block;
+    align-self: flex-start;
+    background-color: rgba(220, 38, 38, 0.15);
+    color: var(--accent-red);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.project-card h3 {
+    font-size: 1.35rem;
+    margin-bottom: 4px;
+}
+
+.project-power {
+    color: var(--accent-gold);
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+}
+
+.project-specs {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.project-specs li {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    padding: 5px 0;
+    padding-left: 18px;
+    position: relative;
+}
+
+.project-specs li::before {
+    content: "▸";
+    color: var(--accent-red);
+    position: absolute;
+    left: 0;
+}
+
+.project-footer {
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.project-footer strong {
+    color: var(--accent-gold);
+}
+
+/* ORÇAMENTO INTERATIVO */
+.quote-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.quote-form {
+    background-color: var(--bg-card);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 14px;
+    background-color: var(--bg-darker);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 0.92rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--accent-red);
+}
+
+.services-label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+    margin: 18px 0 12px;
+}
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.check-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    background: var(--bg-darker);
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+
+.check-item input[type="checkbox"] {
+    accent-color: var(--accent-red);
+    width: 16px;
+    height: 16px;
+}
+
+.total-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(245, 158, 11, 0.1);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    padding: 14px 18px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.total-box span {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.total-box strong {
+    font-size: 1.3rem;
+    color: var(--accent-gold);
+}
+
+.btn-full {
+    width: 100%;
+    text-align: center;
+}
+
+/* TERMINAL DE PROTOCOLO */
+.protocol-box {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.protocol-header {
+    background-color: #16171d;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.dot.red { background-color: #ef4444; }
+.dot.yellow { background-color: #f59e0b; }
+.dot.green { background-color: #10b981; }
+
+.terminal-title {
+    margin-left: 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+}
+
+.protocol-screen {
+    flex: 1;
+    padding: 25px;
+    background-color: #09090b;
+    color: var(--terminal-green);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #08080a;
+    border-top: 1px solid var(--border-color);
+    padding-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+.footer-brand p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    max-width: 380px;
+    margin-top: 10px;
+}
+
+.footer-info p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* RESPONSIVIDADE (CELULARES E TABLETS) */
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+    }
+    .hero h1 {
+        font-size: 2.1rem;
+    }
+    .projects-grid,
+    .quote-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .checkbox-grid,
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
