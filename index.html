@@ -3,436 +3,848 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APEX AUTO CUSTOM | Performance, Estética & Engenharia Automotiva</title>
+    <title>ARENA PRO CONTROL | Gestão de Partidas, Cronômetro & Tática</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Fontes Google para visual automotivo moderno -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- CABEÇALHO / NAVEGAÇÃO -->
+    <!-- BARRA DE NAVEGAÇÃO SUPERIOR -->
     <header class="navbar">
-        <div class="container nav-content">
-            <a href="#inicio" class="logo">
-                <span class="logo-icon">⚡</span>
-                <span class="logo-text">APEX <strong>AUTO CUSTOM</strong></span>
+        <div class="container nav-wrapper">
+            <a href="#placar" class="brand">
+                <span class="brand-icon">⚽</span>
+                <div class="brand-text">
+                    <span class="brand-title">ARENA <strong>PRO</strong></span>
+                    <span class="brand-sub">MATCH CONTROL SYSTEM</span>
+                </div>
             </a>
 
-            <nav class="nav-links">
-                <a href="#inicio">Início</a>
-                <a href="#diferenciais">Diferenciais</a>
-                <a href="#servicos">Serviços & Tabela</a>
-                <a href="#projetos">Projetos Realizados</a>
-                <a href="#orcamento" class="btn-nav-cta">Solicitar Orçamento</a>
+            <nav class="nav-menu">
+                <a href="#placar" class="nav-link active">Placar & Tempo</a>
+                <a href="#elencos" class="nav-link">Elenco & Cartões</a>
+                <a href="#scout" class="nav-link">Scout & Posse</a>
+                <a href="#prancheta" class="nav-link">Prancheta Tática</a>
+                <a href="#sumula" class="nav-cta">📋 Gerar Súmula</a>
             </nav>
         </div>
     </header>
 
-    <!-- SEÇÃO HERO (INÍCIO) -->
-    <section id="inicio" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <span class="badge-gold">ENGENHARIA DE PERFORMANCE & ESTÉTICA AUTOMOTIVA</span>
-            <h1>Transformamos seu carro em uma <br><span class="text-red">máquina única</span> nas ruas e pistas.</h1>
-            <p>Especialistas em Remapeamento ECU, Envelopamento Premium, PPF Regenerativo, Suspensão Coilover, Escapamentos em Inox sob medida e Projetos de Áudio Hi-Fi.</p>
-            <div class="hero-buttons">
-                <a href="#orcamento" class="btn-primary">MONTE SEU PROJETO AGORA ➔</a>
-                <a href="#projetos" class="btn-secondary">VER PORTFÓLIO</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- BARRA DE ESTATÍSTICAS -->
-    <section class="stats-bar">
-        <div class="container stats-grid">
-            <div class="stat-card">
-                <h3>+480</h3>
-                <p>Projetos Entregues</p>
-            </div>
-            <div class="stat-card">
-                <h3>12 Anos</h3>
-                <p>De Experiência no Setor</p>
-            </div>
-            <div class="stat-card">
-                <h3>Dinamômetro</h3>
-                <p>4x4 Próprio na Oficina</p>
-            </div>
-            <div class="stat-card">
-                <h3>100%</h3>
-                <p>Garantia nas Peças e Mão de Obra</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- SEÇÃO DIFERENCIAIS -->
-    <section id="diferenciais" class="section">
+    <!-- CABEÇALHO DA COMPETIÇÃO -->
+    <section class="match-banner">
         <div class="container">
-            <div class="section-header">
-                <span class="subtitle">EXCELÊNCIA TÉCNICA</span>
-                <h2>POR QUE ESCOLHER A APEX AUTO CUSTOM?</h2>
-            </div>
-
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🔧</div>
-                    <h3>Peças Importadas & Homologadas</h3>
-                    <p>Trabalhamos diretamente com marcas líderes mundiais como Brembo, Bilstein, Akrapovič, K&N, FuelTech e 3M, garantindo procedência e durabilidade extrema.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💻</div>
-                    <h3>Telemetria e Diagnóstico Digital</h3>
-                    <p>Todo aumento de potência é aferido antes e depois em nosso dinamômetro 4x4, garantindo curva de torque linear, mistura ar/combustível ideal e segurança total ao motor.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🛡️</div>
-                    <h3>Estúdio Climatizado Livre de Poeira</h3>
-                    <p>Cabine exclusiva com iluminação LED de detalhamento para aplicação de PPF (Paint Protection Film), vitrificação cerâmica 9H e envelopamento automotivo sem imperfeições.</p>
-                </div>
-            </div>
+            <div class="banner-badge">SISTEMA OFICIAL DE MESA E ARBITRAGEM • AO VIVO</div>
+            <h1>Painel de Controle de Partida</h1>
+            <p>Gerencie cronometragem, acréscimos, disciplina de atletas, estatísticas de posse e súmula oficial em tempo real.</p>
         </div>
     </section>
 
-    <!-- SEÇÃO SERVIÇOS & TABELA DE PREÇOS -->
-    <section id="servicos" class="section bg-darker">
-        <div class="container">
-            <div class="section-header">
-                <span class="subtitle">TABELA DE REFERÊNCIA</span>
-                <h2>CATÁLOGO DE SERVIÇOS ESPECIALIZADOS</h2>
-                <p class="section-desc">Valores base sujeitos a variação conforme modelo, ano e motorização do veículo.</p>
-            </div>
+    <main class="container main-layout">
 
-            <div class="table-responsive">
-                <table class="services-table">
-                    <thead>
-                        <tr>
-                            <th>Categoria</th>
-                            <th>Serviço Especializado</th>
-                            <th>Especificação Técnica</th>
-                            <th>Prazo Médio</th>
-                            <th>A partir de</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><span class="tag tag-perf">Performance</span></td>
-                            <td><strong>Remap ECU Stage 1</strong></td>
-                            <td>Otimização de mapa de injeção/ignição (+15% a +30% cv)</td>
-                            <td>1 dia</td>
-                            <td class="price">R$ 2.200,00</td>
-                        </tr>
-                        <tr>
-                            <td><span class="tag tag-perf">Performance</span></td>
-                            <td><strong>Remap ECU Stage 2 + Downpipe</strong></td>
-                            <td>Downpipe em Inox 304 + Filtro Inbox + Acerto em Dinamômetro</td>
-                            <td>2 dias</td>
-                            <td class="price">R$ 4.800,00</td>
-                        </tr>
-                        <tr>
-                            <td><span class="tag tag-exh">Escapamento</span></td>
-                            <td><strong>Catback Full Inox com Difusor</strong></td>
-                            <td>Solda TIG, ponteiras em carbono e controle via válvula eletrônica</td>
-                            <td>3 dias</td>
-                            <td class="price">R$ 5.500,00</td>
-                        </tr>
-                        <tr>
-                            <td><span class="tag tag-est">Estética</span></td>
-                            <td><strong>Envelopamento Full Car Premium</strong></td>
-                            <td>Vinil importado (Oracal / 3M / Avery) com desmontagem técnica</td>
-                            <td>5 dias</td>
-                            <td class="price">R$ 6.500,00</td>
-                        </tr>
-                        <tr>
-                            <td><span class="tag tag-est">Proteção</span></td>
-                            <td><strong>PPF Frontal (Paint Protection)</strong></td>
-                            <td>Película regenerativa contra pedras e riscos (Capô, para-choque, faróis)</td>
-                            <td>3 dias</td>
-                            <td class="price">R$ 4.200,00</td>
-                        </tr>
-                        <tr>
-                            <td><span class="tag tag-est">Estética</span></td>
-                            <td><strong>Vitrificação Cerâmica 9H + Polimento</strong></td>
-                            <td>Correção de verniz em 3 etapas + proteção hidrofóbica de 3 anos</td>
-                            <td>2 dias</td>
-                            <td class="price">R$ 1.800,00</td>
-                        </tr>
-                        <tr>
-                            <td><span class="tag tag-susp">Suspensão</span></td>
-                            <td><strong>Instalação Coilover / Suspensão a Ar</strong></td>
-                            <td>Geometria completa, cambagem e regulagem de carga em balança</td>
-                            <td>2 dias</td>
-                            <td class="price">R$ 3.900,00</td>
-                        </tr>
-                        <tr>
-                            <td><span class="tag tag-susp">Rodas & Freios</span></td>
-                            <td><strong>Pintura Eletrostática + Pinças</strong></td>
-                            <td>Pintura em estufa de rodas e pinças de freio em alta temperatura</td>
-                            <td>2 dias</td>
-                            <td class="price">R$ 1.400,00</td>
-                        </tr>
-                        <tr>
-                            <td><span class="tag tag-tech">Áudio & Tech</span></td>
-                            <td><strong>Sistema de Som Hi-Fi / Multimídia</strong></td>
-                            <td>Tratamento acústico nas portas, amplificador DSP e subwoofer slim</td>
-                            <td>3 dias</td>
-                            <td class="price">R$ 3.500,00</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <!-- SEÇÃO PORTFÓLIO / PROJETOS REALIZADOS -->
-    <section id="projetos" class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="subtitle">GALERIA DA OFICINA</span>
-                <h2>PROJETOS EM DESTAQUE</h2>
-            </div>
-
-            <div class="projects-grid">
-                <!-- Projeto 1 -->
-                <div class="project-card">
-                    <div class="project-badge">STAGE 3 • V8 SUPERCHARGED</div>
-                    <h3>FORD MUSTANG GT V8</h3>
-                    <p class="project-power">Potência: 585 cv | Torque: 68 kgfm</p>
-                    <ul class="project-specs">
-                        <li>Supercharger Whipple + Coletor Dimensionado em Inox</li>
-                        <li>Envelopamento Satin Black com faixas Vermelho Racing</li>
-                        <li>Rodas Forjadas Aro 20" + Pneus Michelin Pilot Sport 4S</li>
-                        <li>Sistema de Freios Brembo de 6 pistões</li>
-                    </ul>
-                    <div class="project-footer">
-                        <span>INVESTIMENTO TOTAL: <strong>R$ 84.000,00</strong></span>
-                    </div>
+        <!-- ==================== SEÇÃO 1: PLACAR & CRONÔMETRO ==================== -->
+        <section id="placar" class="card-section">
+            <div class="section-top">
+                <div>
+                    <span class="kicker">MESA DE CONTROLE</span>
+                    <h2>Placar Eletrônico & Cronômetro</h2>
                 </div>
-
-                <!-- Projeto 2 -->
-                <div class="project-card">
-                    <div class="project-badge">TRACK DAY EDITION</div>
-                    <h3>VW GOLF GTI MK7.5</h3>
-                    <p class="project-power">Potência: 360 cv | Torque: 51 kgfm</p>
-                    <ul class="project-specs">
-                        <li>Turbina IS38 + Intercooler Frontal de Alumínio</li>
-                        <li>Remap Motor + Câmbio DSG Stage 3</li>
-                        <li>Suspensão Coilover Bilstein B16 com regulagem de carga</li>
-                        <li>Interior com bancos concha e volante em Alcântara</li>
-                    </ul>
-                    <div class="project-footer">
-                        <span>INVESTIMENTO TOTAL: <strong>R$ 42.500,00</strong></span>
-                    </div>
-                </div>
-
-                <!-- Projeto 3 -->
-                <div class="project-card">
-                    <div class="project-badge">WIDEBODY & CARBON</div>
-                    <h3>BMW M3 F80 COMPETITION</h3>
-                    <p class="project-power">Potência: 530 cv | Torque: 72 kgfm</p>
-                    <ul class="project-specs">
-                        <li>Kit aerodinâmico completo em Fibra de Carbono real</li>
-                        <li>Escapamento Full Titânio com ponteiras queimadas</li>
-                        <li>Aplicação de PPF Full Body Fosco (Stealth)</li>
-                        <li>Sistema de som Harman Kardon customizado</li>
-                    </ul>
-                    <div class="project-footer">
-                        <span>INVESTIMENTO TOTAL: <strong>R$ 68.000,00</strong></span>
-                    </div>
-                </div>
-
-                <!-- Projeto 4 -->
-                <div class="project-card">
-                    <div class="project-badge">ASPIRADO 9.000 RPM</div>
-                    <h3>HONDA CIVIC SI K24</h3>
-                    <p class="project-power">Potência: 265 cv (Aspirado)</p>
-                    <ul class="project-specs">
-                        <li>Comandos de válvula Skunk2 Stage 2 + Injeção FuelTech FT550</li>
-                        <li>Pintura customizada Azul Estoril Perolizado</li>
-                        <li>Rodas Enkei RPF1 originais + Barras anti-torção</li>
-                        <li>Coletor 4x2x1 em inox polido sob medida</li>
-                    </ul>
-                    <div class="project-footer">
-                        <span>INVESTIMENTO TOTAL: <strong>R$ 35.000,00</strong></span>
-                    </div>
+                <div class="live-indicator">
+                    <span class="pulse-dot" id="liveDot"></span>
+                    <span id="liveStatusText">AGUARDANDO INÍCIO</span>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- SEÇÃO ORÇAMENTO INTERATIVO -->
-    <section id="orcamento" class="section bg-darker">
-        <div class="container">
-            <div class="section-header">
-                <span class="subtitle">SIMULADOR ONLINE</span>
-                <h2>MONTE SEU ORÇAMENTO PERSONALIZADO</h2>
+            <!-- Configurações da Partida -->
+            <div class="settings-grid">
+                <div class="input-group">
+                    <label for="nomeTorneio">Competição / Fase</label>
+                    <input type="text" id="nomeTorneio" value="Copa Arena Pro 2026 - Quartas de Final">
+                </div>
+                <div class="input-group">
+                    <label for="duracaoTempo">Duração por Tempo</label>
+                    <select id="duracaoTempo" onchange="resetarRelogio()">
+                        <option value="10">10 min (Society Rápido)</option>
+                        <option value="20">20 min (Futsal Oficial)</option>
+                        <option value="25">25 min (Society 7x7)</option>
+                        <option value="30">30 min (Categoria de Base)</option>
+                        <option value="45" selected>45 min (Campo Oficial)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="periodoAtual">Período da Partida</label>
+                    <select id="periodoAtual">
+                        <option value="1º Tempo">1º Tempo</option>
+                        <option value="Intervalo">Intervalo</option>
+                        <option value="2º Tempo">2º Tempo</option>
+                        <option value="Prorrogação 1ºT">Prorrogação (1ºT)</option>
+                        <option value="Prorrogação 2ºT">Prorrogação (2ºT)</option>
+                        <option value="Pênaltis">Disputa de Pênaltis</option>
+                    </select>
+                </div>
             </div>
 
-            <div class="quote-wrapper">
-                <!-- Formulário -->
-                <form id="quoteForm" class="quote-form">
-                    <div class="form-group">
-                        <label for="nome">Nome Completo *</label>
-                        <input type="text" id="nome" placeholder="Ex: Carlos Eduardo" required>
+            <!-- Painel Central (Mandante | Relógio | Visitante) -->
+            <div class="scoreboard-grid">
+                <!-- Mandante -->
+                <div class="team-panel home-team">
+                    <span class="team-tag">MANDANTE</span>
+                    <input type="text" id="nomeTimeA" class="team-title-input" value="ATLÉTICO REAL FC">
+                    <div class="score-number" id="placarA">0</div>
+                    <div class="score-actions">
+                        <button class="btn btn-green" onclick="alterarGol('A', 1)">+ GOL</button>
+                        <button class="btn btn-dark" onclick="alterarGol('A', -1)" title="Anular Gol">-1</button>
                     </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="telefone">WhatsApp / Telefone *</label>
-                            <input type="text" id="telefone" placeholder="(11) 99999-9999" required>
+                    <div class="mini-counters">
+                        <div class="mini-stat">
+                            <span>Faltas</span>
+                            <div class="mini-ctrl">
+                                <button onclick="alterarContador('faltas', 'A', -1)">-</button>
+                                <strong id="faltasA">0</strong>
+                                <button onclick="alterarContador('faltas', 'A', 1)">+</button>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="ano">Ano / Motorização</label>
-                            <input type="text" id="ano" placeholder="Ex: 2023 2.0 Turbo">
+                        <div class="mini-stat">
+                            <span>Escanteios</span>
+                            <div class="mini-ctrl">
+                                <button onclick="alterarContador('escanteios', 'A', -1)">-</button>
+                                <strong id="escanteiosA">0</strong>
+                                <button onclick="alterarContador('escanteios', 'A', 1)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cronômetro Central -->
+                <div class="clock-panel">
+                    <div class="period-pill" id="badgePeriodo">1º TEMPO</div>
+                    <div class="digital-clock" id="timerDisplay">00:00</div>
+
+                    <div class="extra-time-bar">
+                        <span>Acréscimos: <strong id="acrescimoDisplay">+0 min</strong></span>
+                        <div class="extra-btns">
+                            <button onclick="alterarAcrescimo(-1)">-1</button>
+                            <button onclick="alterarAcrescimo(1)">+1</button>
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="veiculo">Marca e Modelo do Veículo *</label>
-                        <input type="text" id="veiculo" placeholder="Ex: Audi A3 Sedan / BMW 320i" required>
+                    <div class="clock-main-actions">
+                        <button id="btnStartPause" class="btn btn-green btn-lg" onclick="toggleTimer()">▶ INICIAR</button>
+                        <button class="btn btn-outline" onclick="resetarRelogio()">↺ ZERAR</button>
                     </div>
 
-                    <label class="services-label">Selecione os Upgrades Desejados:</label>
-                    <div class="checkbox-grid">
-                        <label class="check-item">
-                            <input type="checkbox" class="service-chk" data-name="Remap ECU Stage 1" value="2200">
-                            <span>Remap ECU (R$ 2.200)</span>
-                        </label>
-                        <label class="check-item">
-                            <input type="checkbox" class="service-chk" data-name="Escapamento Full Inox" value="5500">
-                            <span>Escapamento Inox (R$ 5.500)</span>
-                        </label>
-                        <label class="check-item">
-                            <input type="checkbox" class="service-chk" data-name="Envelopamento Full Car" value="6500">
-                            <span>Envelopamento (R$ 6.500)</span>
-                        </label>
-                        <label class="check-item">
-                            <input type="checkbox" class="service-chk" data-name="Suspensão Coilover" value="3900">
-                            <span>Suspensão Coilover (R$ 3.900)</span>
-                        </label>
-                        <label class="check-item">
-                            <input type="checkbox" class="service-chk" data-name="Pintura Rodas e Pinças" value="1400">
-                            <span>Rodas & Pinças (R$ 1.400)</span>
-                        </label>
-                        <label class="check-item">
-                            <input type="checkbox" class="service-chk" data-name="Sistema de Som Hi-Fi / DSP" value="3500">
-                            <span>Som Hi-Fi / DSP (R$ 3.500)</span>
-                        </label>
+                    <div class="sim-speed">
+                        <span>Simulação:</span>
+                        <button class="speed-pill active" onclick="setVelocidade(1000, this)">1x</button>
+                        <button class="speed-pill" onclick="setVelocidade(100, this)">10x</button>
+                        <button class="speed-pill" onclick="setVelocidade(20, this)">50x</button>
                     </div>
+                </div>
 
-                    <div class="total-box">
-                        <span>INVESTIMENTO ESTIMADO:</span>
-                        <strong id="valorTotal">R$ 0,00</strong>
+                <!-- Visitante -->
+                <div class="team-panel away-team">
+                    <span class="team-tag">VISITANTE</span>
+                    <input type="text" id="nomeTimeB" class="team-title-input" value="SPORTING UNITED">
+                    <div class="score-number" id="placarB">0</div>
+                    <div class="score-actions">
+                        <button class="btn btn-green" onclick="alterarGol('B', 1)">+ GOL</button>
+                        <button class="btn btn-dark" onclick="alterarGol('B', -1)" title="Anular Gol">-1</button>
                     </div>
-
-                    <button type="submit" class="btn-primary btn-full">GERAR PROTOCOLO DE ORÇAMENTO</button>
-                </form>
-
-                <!-- Terminal de Protocolo -->
-                <div class="protocol-box">
-                    <div class="protocol-header">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                        <span class="terminal-title">FICHA TÉCNICA / TELEMETRIA DE ORÇAMENTO</span>
+                    <div class="mini-counters">
+                        <div class="mini-stat">
+                            <span>Faltas</span>
+                            <div class="mini-ctrl">
+                                <button onclick="alterarContador('faltas', 'B', -1)">-</button>
+                                <strong id="faltasB">0</strong>
+                                <button onclick="alterarContador('faltas', 'B', 1)">+</button>
+                            </div>
+                        </div>
+                        <div class="mini-stat">
+                            <span>Escanteios</span>
+                            <div class="mini-ctrl">
+                                <button onclick="alterarContador('escanteios', 'B', -1)">-</button>
+                                <strong id="escanteiosB">0</strong>
+                                <button onclick="alterarContador('escanteios', 'B', 1)">+</button>
+                            </div>
+                        </div>
                     </div>
-                    <pre id="protocolOutput" class="protocol-screen">
-==================================================
-        AGUARDANDO DADOS DO SEU PROJETO...
-==================================================
-
-Preencha os dados ao lado e selecione os upgrades
-desejados para calcular o valor estimado e gerar
-seu código de atendimento prioritário na oficina.
-                    </pre>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- RODAPÉ -->
+            <!-- Linha do Tempo ao Vivo -->
+            <div class="timeline-box">
+                <div class="timeline-header">
+                    <span>⏱️ LINHA DO TEMPO DA PARTIDA</span>
+                    <button class="btn-text-only" onclick="limparLog()">Limpar Histórico</button>
+                </div>
+                <div id="eventLog" class="timeline-feed">
+                    <div class="timeline-empty">Aguardando o apito inicial para registrar eventos...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SEÇÃO 2: ELENCOS & CARTÕES ==================== -->
+        <section id="elencos" class="card-section">
+            <div class="section-top">
+                <div>
+                    <span class="kicker">DISCIPLINA & ATLETAS</span>
+                    <h2>Controle de Elenco, Cartões e Substituições</h2>
+                </div>
+            </div>
+
+            <div class="rosters-grid">
+                <!-- Time A -->
+                <div class="roster-box">
+                    <div class="roster-top">
+                        <h3 id="tituloElencoA">ATLÉTICO REAL FC</h3>
+                        <span class="cards-summary" id="cartoesResumoA">🟨 0 &nbsp;|&nbsp; 🟥 0</span>
+                    </div>
+
+                    <div class="add-athlete-bar">
+                        <input type="number" id="numJogA" placeholder="Nº" min="1" max="99">
+                        <input type="text" id="nomeJogA" placeholder="Nome do atleta">
+                        <select id="posJogA">
+                            <option value="GOL">GOL</option>
+                            <option value="ZAG">ZAG</option>
+                            <option value="LAT">LAT</option>
+                            <option value="MEI" selected>MEI</option>
+                            <option value="ATA">ATA</option>
+                        </select>
+                        <button class="btn btn-green" onclick="adicionarJogador('A')">+ Add</button>
+                    </div>
+
+                    <div class="table-wrap">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Nº</th>
+                                    <th>Atleta</th>
+                                    <th>Pos</th>
+                                    <th>Gols</th>
+                                    <th>Ações Rápidas</th>
+                                </tr>
+                            </thead>
+                            <tbody id="listaJogadoresA"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Time B -->
+                <div class="roster-box">
+                    <div class="roster-top">
+                        <h3 id="tituloElencoB">SPORTING UNITED</h3>
+                        <span class="cards-summary" id="cartoesResumoB">🟨 0 &nbsp;|&nbsp; 🟥 0</span>
+                    </div>
+
+                    <div class="add-athlete-bar">
+                        <input type="number" id="numJogB" placeholder="Nº" min="1" max="99">
+                        <input type="text" id="nomeJogB" placeholder="Nome do atleta">
+                        <select id="posJogB">
+                            <option value="GOL">GOL</option>
+                            <option value="ZAG">ZAG</option>
+                            <option value="LAT">LAT</option>
+                            <option value="MEI" selected>MEI</option>
+                            <option value="ATA">ATA</option>
+                        </select>
+                        <button class="btn btn-green" onclick="adicionarJogador('B')">+ Add</button>
+                    </div>
+
+                    <div class="table-wrap">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Nº</th>
+                                    <th>Atleta</th>
+                                    <th>Pos</th>
+                                    <th>Gols</th>
+                                    <th>Ações Rápidas</th>
+                                </tr>
+                            </thead>
+                            <tbody id="listaJogadoresB"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SEÇÃO 3: SCOUT & POSSE ==================== -->
+        <section id="scout" class="card-section">
+            <div class="section-top">
+                <div>
+                    <span class="kicker">ANÁLISE DE DESEMPENHO</span>
+                    <h2>Scout Técnico & Posse de Bola</h2>
+                </div>
+            </div>
+
+            <!-- Barra de Posse -->
+            <div class="possession-card">
+                <div class="possession-labels">
+                    <span id="posseLabelA" class="posse-a-txt">ATLÉTICO REAL FC: 50%</span>
+                    <span class="posse-center-txt">POSSE DE BOLA ATIVA</span>
+                    <span id="posseLabelB" class="posse-b-txt">SPORTING UNITED: 50%</span>
+                </div>
+
+                <div class="possession-track">
+                    <div class="possession-bar-a" id="barraPosseA" style="width: 50%;"></div>
+                    <div class="possession-bar-b" id="barraPosseB" style="width: 50%;"></div>
+                </div>
+
+                <div class="possession-switches">
+                    <button id="btnPosseA" class="posse-toggle active-a" onclick="selecionarPosse('A')">⚽ Posse com Mandante</button>
+                    <button id="btnPosseB" class="posse-toggle" onclick="selecionarPosse('B')">⚽ Posse com Visitante</button>
+                </div>
+            </div>
+
+            <!-- Indicadores Comparativos -->
+            <div class="scout-list">
+                <div class="scout-item">
+                    <div class="scout-ctrl">
+                        <button onclick="alterarScout('chutes', 'A', -1)">-</button>
+                        <span id="chutesA">0</span>
+                        <button onclick="alterarScout('chutes', 'A', 1)">+</button>
+                    </div>
+                    <div class="scout-metric">Finalizações Totais</div>
+                    <div class="scout-ctrl">
+                        <button onclick="alterarScout('chutes', 'B', -1)">-</button>
+                        <span id="chutesB">0</span>
+                        <button onclick="alterarScout('chutes', 'B', 1)">+</button>
+                    </div>
+                </div>
+
+                <div class="scout-item">
+                    <div class="scout-ctrl">
+                        <button onclick="alterarScout('chutesGol', 'A', -1)">-</button>
+                        <span id="chutesGolA">0</span>
+                        <button onclick="alterarScout('chutesGol', 'A', 1)">+</button>
+                    </div>
+                    <div class="scout-metric">Chutes no Alvo (Gol)</div>
+                    <div class="scout-ctrl">
+                        <button onclick="alterarScout('chutesGol', 'B', -1)">-</button>
+                        <span id="chutesGolB">0</span>
+                        <button onclick="alterarScout('chutesGol', 'B', 1)">+</button>
+                    </div>
+                </div>
+
+                <div class="scout-item">
+                    <div class="scout-ctrl">
+                        <button onclick="alterarScout('defesas', 'A', -1)">-</button>
+                        <span id="defesasA">0</span>
+                        <button onclick="alterarScout('defesas', 'A', 1)">+</button>
+                    </div>
+                    <div class="scout-metric">Defesas do Goleiro</div>
+                    <div class="scout-ctrl">
+                        <button onclick="alterarScout('defesas', 'B', -1)">-</button>
+                        <span id="defesasB">0</span>
+                        <button onclick="alterarScout('defesas', 'B', 1)">+</button>
+                    </div>
+                </div>
+
+                <div class="scout-item">
+                    <div class="scout-ctrl">
+                        <button onclick="alterarScout('impedimentos', 'A', -1)">-</button>
+                        <span id="impedimentosA">0</span>
+                        <button onclick="alterarScout('impedimentos', 'A', 1)">+</button>
+                    </div>
+                    <div class="scout-metric">Impedimentos</div>
+                    <div class="scout-ctrl">
+                        <button onclick="alterarScout('impedimentos', 'B', -1)">-</button>
+                        <span id="impedimentosB">0</span>
+                        <button onclick="alterarScout('impedimentos', 'B', 1)">+</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SEÇÃO 4: PRANCHETA TÁTICA ==================== -->
+        <section id="prancheta" class="card-section">
+            <div class="section-top">
+                <div>
+                    <span class="kicker">ESTRATEGISTA DE CAMPO</span>
+                    <h2>Prancheta Tática Interativa</h2>
+                </div>
+                <div class="tactical-toolbar">
+                    <label for="esquemaTatico">Esquema:</label>
+                    <select id="esquemaTatico" onchange="aplicarFormacao()">
+                        <option value="4-3-3">4-3-3 (Ofensivo)</option>
+                        <option value="4-4-2">4-4-2 (Duas Linhas)</option>
+                        <option value="3-5-2">3-5-2 (Alas Avançados)</option>
+                        <option value="4-2-3-1">4-2-3-1 (Moderno)</option>
+                    </select>
+                </div>
+            </div>
+
+            <p class="helper-note">💡 Clique em qualquer ponto do gramado para movimentar a bola ou troque a formação acima.</p>
+
+            <div class="soccer-pitch" id="soccerPitch" onclick="moverBola(event)">
+                <div class="pitch-line-mid"></div>
+                <div class="pitch-circle-mid"></div>
+                <div class="pitch-spot-mid"></div>
+                <div class="pitch-box-left"></div>
+                <div class="pitch-small-left"></div>
+                <div class="pitch-box-right"></div>
+                <div class="pitch-small-right"></div>
+
+                <div class="pitch-ball" id="pitchBall" style="left: 50%; top: 50%;">⚽</div>
+                <div id="pitchPlayersLayer"></div>
+            </div>
+        </section>
+
+        <!-- ==================== SEÇÃO 5: SÚMULA ELETRÔNICA ==================== -->
+        <section id="sumula" class="card-section">
+            <div class="section-top">
+                <div>
+                    <span class="kicker">RELATÓRIO OFICIAL</span>
+                    <h2>Súmula Eletrônica da Partida</h2>
+                </div>
+            </div>
+
+            <div class="sumula-grid">
+                <div class="sumula-inputs">
+                    <div class="input-group">
+                        <label for="arbitroNome">Árbitro Principal</label>
+                        <input type="text" id="arbitroNome" value="Anderson Daronco">
+                    </div>
+                    <div class="input-group">
+                        <label for="localJogo">Local / Estádio / Arena</label>
+                        <input type="text" id="localJogo" value="Arena Pro - Campo Principal">
+                    </div>
+                    <div class="input-group">
+                        <label for="obsSumula">Relatório Disciplinar / Ocorrências</label>
+                        <textarea id="obsSumula" rows="4">Partida transcorreu dentro da normalidade disciplinar.</textarea>
+                    </div>
+                    <div class="sumula-btns">
+                        <button class="btn btn-green btn-block" onclick="gerarSumulaOficial()">📋 COMPILAR SÚMULA OFICIAL</button>
+                        <button class="btn btn-outline btn-block" onclick="copiarSumula()">📄 COPIAR TEXTO</button>
+                    </div>
+                </div>
+
+                <div class="terminal-window">
+                    <div class="terminal-bar">
+                        <span class="t-dot red"></span>
+                        <span class="t-dot yellow"></span>
+                        <span class="t-dot green"></span>
+                        <span class="t-title">DOCUMENTO_OFICIAL_PARTIDA.TXT</span>
+                    </div>
+                    <pre id="sumulaOutput" class="terminal-body">====================================================
+         ARENA PRO - SÚMULA DIGITAL OFICIAL
+====================================================
+
+Clique em "COMPILAR SÚMULA OFICIAL" ao lado para
+consolidar o placar, tempo jogado, cartões,
+artilheiros e estatísticas completas da partida.</pre>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
     <footer class="footer">
-        <div class="container footer-content">
-            <div class="footer-brand">
-                <span class="logo-text">⚡ APEX <strong>AUTO CUSTOM</strong></span>
-                <p>Engenharia de performance, estética automotiva de alto padrão e projetos exclusivos.</p>
-            </div>
-            <div class="footer-info">
-                <p>📍 Av. das Nações, 1500 - Distrito Industrial</p>
-                <p>🕒 Segunda a Sábado: 08h00 às 18h00</p>
-                <p>📞 (11) 4002-8922 | contato@apexautocustom.com.br</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 APEX AUTO CUSTOM - Todos os direitos reservados.</p>
+        <div class="container footer-flex">
+            <span>⚽ <strong>ARENA PRO CONTROL</strong> — Sistema Oficial de Gestão & Cronometragem Esportiva</span>
+            <span>© 2026 Arena Pro Sports Tech</span>
         </div>
     </footer>
 
-    <!-- SCRIPT PARA CÁLCULO AUTOMÁTICO E GERAÇÃO DE PROTOCOLO -->
+    <!-- JAVASCRIPT DE CONTROLE COMPLETO -->
     <script>
-        const checkboxes = document.querySelectorAll('.service-chk');
-        const valorTotalEl = document.getElementById('valorTotal');
-        const quoteForm = document.getElementById('quoteForm');
-        const protocolOutput = document.getElementById('protocolOutput');
+        let segundosTotais = 0;
+        let timerInterval = null;
+        let rodando = false;
+        let velocidadeMs = 1000;
+        let acrescimos = 0;
 
-        function formatarMoeda(valor) {
-            return valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-        }
-
-        function atualizarTotal() {
-            let total = 0;
-            checkboxes.forEach(chk => {
-                if (chk.checked) {
-                    total += parseFloat(chk.value);
-                }
-            });
-            valorTotalEl.textContent = formatarMoeda(total);
-            return total;
-        }
-
-        checkboxes.forEach(chk => {
-            chk.addEventListener('change', atualizarTotal);
-        });
-
-        quoteForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const total = atualizarTotal();
-
-            if (total === 0) {
-                alert('Selecione pelo menos um serviço para gerar o orçamento!');
-                return;
+        const estado = {
+            placar: { A: 0, B: 0 },
+            faltas: { A: 0, B: 0 },
+            escanteios: { A: 0, B: 0 },
+            scout: {
+                chutes: { A: 0, B: 0 },
+                chutesGol: { A: 0, B: 0 },
+                defesas: { A: 0, B: 0 },
+                impedimentos: { A: 0, B: 0 }
             }
+        };
 
-            const nome = document.getElementById('nome').value.toUpperCase();
-            const telefone = document.getElementById('telefone').value;
-            const veiculo = document.getElementById('veiculo').value.toUpperCase();
-            const ano = document.getElementById('ano').value || 'Não informado';
-            const protocolo = Math.floor(10000 + Math.random() * 90000);
+        let posseAtual = 'A';
+        let segPosse = { A: 1, B: 1 };
+        let eventosPartida = [];
 
-            let listaServicos = '';
-            checkboxes.forEach(chk => {
-                if (chk.checked) {
-                    const nomeServ = chk.getAttribute('data-name').padEnd(28, '.');
-                    const precoServ = formatarMoeda(parseFloat(chk.value));
-                    listaServicos += ` [✔] ${nomeServ} ${precoServ}\n`;
+        const jogadores = {
+            A: [
+                { num: 1, nome: "Alisson", pos: "GOL", gols: 0, amarelo: 0, vermelho: false, emCampo: true },
+                { num: 4, nome: "Marquinhos", pos: "ZAG", gols: 0, amarelo: 0, vermelho: false, emCampo: true },
+                { num: 8, nome: "Bruno Guimarães", pos: "MEI", gols: 0, amarelo: 0, vermelho: false, emCampo: true },
+                { num: 10, nome: "Vinícius Jr", pos: "ATA", gols: 0, amarelo: 0, vermelho: false, emCampo: true },
+                { num: 9, nome: "Endrick", pos: "ATA", gols: 0, amarelo: 0, vermelho: false, emCampo: true }
+            ],
+            B: [
+                { num: 1, nome: "Courtois", pos: "GOL", gols: 0, amarelo: 0, vermelho: false, emCampo: true },
+                { num: 2, nome: "Rüdiger", pos: "ZAG", gols: 0, amarelo: 0, vermelho: false, emCampo: true },
+                { num: 5, nome: "Bellingham", pos: "MEI", gols: 0, amarelo: 0, vermelho: false, emCampo: true },
+                { num: 7, nome: "Mbappé", pos: "ATA", gols: 0, amarelo: 0, vermelho: false, emCampo: true },
+                { num: 11, nome: "Rodrygo", pos: "ATA", gols: 0, amarelo: 0, vermelho: false, emCampo: true }
+            ]
+        };
+
+        // CRONÔMETRO
+        function formatarTempo(seg) {
+            const m = Math.floor(seg / 60).toString().padStart(2, '0');
+            const s = (seg % 60).toString().padStart(2, '0');
+            return `${m}:${s}`;
+        }
+
+        function getMinuto() {
+            return Math.floor(segundosTotais / 60) + 1;
+        }
+
+        function toggleTimer() {
+            const btn = document.getElementById('btnStartPause');
+            const dot = document.getElementById('liveDot');
+            const statusTxt = document.getElementById('liveStatusText');
+
+            if (rodando) {
+                clearInterval(timerInterval);
+                rodando = false;
+                btn.textContent = "▶ CONTINUAR";
+                btn.classList.remove('btn-gold');
+                btn.classList.add('btn-green');
+                dot.classList.remove('active');
+                statusTxt.textContent = "PARTIDA PAUSADA";
+            } else {
+                rodando = true;
+                btn.textContent = "⏸ PAUSAR";
+                btn.classList.remove('btn-green');
+                btn.classList.add('btn-gold');
+                dot.classList.add('active');
+                statusTxt.textContent = "EM ANDAMENTO";
+
+                if (segundosTotais === 0 && eventosPartida.length === 0) {
+                    registrarEvento("📣 Apito inicial! Começa a partida.");
                 }
-            });
+                timerInterval = setInterval(tickRelogio, velocidadeMs);
+            }
+        }
 
-            protocolOutput.textContent = 
-`==================================================
-       APEX AUTO CUSTOM - ORÇAMENTO OFICIAL       
-==================================================
-PROTOCOLO: #APX-${protocolo}
-CLIENTE:   ${nome}
-CONTATO:   ${telefone}
-VEÍCULO:   ${veiculo} (${ano})
---------------------------------------------------
-SERVIÇOS SELECIONADOS:
-${listaServicos}--------------------------------------------------
-TOTAL ESTIMADO: ${formatarMoeda(total)}
-CONDIÇÃO: Até 12x no cartão ou 8% OFF no PIX
-==================================================
-Apresente este protocolo na recepção da oficina
-para agendar sua avaliação técnica gratuita.`;
+        function tickRelogio() {
+            segundosTotais++;
+            const display = document.getElementById('timerDisplay');
+            display.textContent = formatarTempo(segundosTotais);
+
+            segPosse[posseAtual]++;
+            atualizarBarraPosse();
+
+            const limiteSeg = parseInt(document.getElementById('duracaoTempo').value) * 60;
+            display.classList.toggle('overtime', segundosTotais >= limiteSeg);
+        }
+
+        function resetarRelogio() {
+            clearInterval(timerInterval);
+            rodando = false;
+            segundosTotais = 0;
+            acrescimos = 0;
+            const display = document.getElementById('timerDisplay');
+            display.textContent = "00:00";
+            display.classList.remove('overtime');
+            document.getElementById('acrescimoDisplay').textContent = "+0 min";
+            const btn = document.getElementById('btnStartPause');
+            btn.textContent = "▶ INICIAR";
+            btn.classList.remove('btn-gold');
+            btn.classList.add('btn-green');
+            document.getElementById('liveDot').classList.remove('active');
+            document.getElementById('liveStatusText').textContent = "CRONÔMETRO ZERADO";
+        }
+
+        function setVelocidade(ms, el) {
+            velocidadeMs = ms;
+            document.querySelectorAll('.speed-pill').forEach(b => b.classList.remove('active'));
+            el.classList.add('active');
+            if (rodando) {
+                clearInterval(timerInterval);
+                timerInterval = setInterval(tickRelogio, velocidadeMs);
+            }
+        }
+
+        function alterarAcrescimo(delta) {
+            acrescimos = Math.max(0, acrescimos + delta);
+            document.getElementById('acrescimoDisplay').textContent = `+${acrescimos} min`;
+            if (delta > 0) registrarEvento(`⏱️ Arbitragem sinaliza +${acrescimos} min de acréscimo.`);
+        }
+
+        document.getElementById('periodoAtual').addEventListener('change', function() {
+            document.getElementById('badgePeriodo').textContent = this.value.toUpperCase();
+            registrarEvento(`🔄 Período alterado para: ${this.value}`);
         });
+
+        document.getElementById('nomeTimeA').addEventListener('input', function() {
+            document.getElementById('tituloElencoA').textContent = this.value || "MANDANTE";
+            atualizarBarraPosse();
+        });
+
+        document.getElementById('nomeTimeB').addEventListener('input', function() {
+            document.getElementById('tituloElencoB').textContent = this.value || "VISITANTE";
+            atualizarBarraPosse();
+        });
+
+        // PLACAR E CONTADORES
+        function alterarGol(time, delta, autor = null) {
+            estado.placar[time] = Math.max(0, estado.placar[time] + delta);
+            document.getElementById(`placar${time}`).textContent = estado.placar[time];
+            const nomeTime = document.getElementById(`nomeTime${time}`).value;
+
+            if (delta > 0) {
+                const infoAutor = autor ? ` (${autor})` : "";
+                registrarEvento(`⚽ GOOOOOL! ${nomeTime}${infoAutor} marca aos ${getMinuto()}'!`);
+            } else {
+                registrarEvento(`❌ Gol anulado (VAR / Arbitragem) para ${nomeTime} aos ${getMinuto()}'.`);
+            }
+        }
+
+        function alterarContador(tipo, time, delta) {
+            estado[tipo][time] = Math.max(0, estado[tipo][time] + delta);
+            document.getElementById(`${tipo}${time}`).textContent = estado[tipo][time];
+        }
+
+        function registrarEvento(texto) {
+            const periodo = document.getElementById('periodoAtual').value;
+            const linha = `[${getMinuto()}' • ${periodo}] ${texto}`;
+            eventosPartida.unshift(linha);
+
+            const feed = document.getElementById('eventLog');
+            feed.innerHTML = eventosPartida.map(ev => `<div class="timeline-row">${ev}</div>`).join('');
+        }
+
+        function limparLog() {
+            eventosPartida = [];
+            document.getElementById('eventLog').innerHTML = `<div class="timeline-empty">Histórico limpo. Aguardando novos eventos...</div>`;
+        }
+
+        // ELENCOS E CARTÕES
+        function renderizarElencos() {
+            ['A', 'B'].forEach(time => {
+                const tbody = document.getElementById(`listaJogadores${time}`);
+                let amarelos = 0, vermelhos = 0;
+
+                tbody.innerHTML = jogadores[time].map((j, idx) => {
+                    amarelos += j.amarelo;
+                    if (j.vermelho) vermelhos++;
+
+                    const rowClass = j.vermelho ? 'row-red' : (!j.emCampo ? 'row-bench' : '');
+                    const cards = `${'🟨'.repeat(j.amarelo)}${j.vermelho ? '🟥' : ''}`;
+
+                    return `
+                        <tr class="${rowClass}">
+                            <td><strong>#${j.num}</strong></td>
+                            <td>${j.nome} ${cards} ${!j.emCampo && !j.vermelho ? '<span class="tag-sub">Banco</span>' : ''}</td>
+                            <td><span class="pos-pill">${j.pos}</span></td>
+                            <td><strong>${j.gols}</strong></td>
+                            <td class="tbl-actions">
+                                <button title="Gol" onclick="golJogador('${time}', ${idx})" ${j.vermelho ? 'disabled' : ''}>⚽</button>
+                                <button title="Amarelo" onclick="cartaoAmarelo('${time}', ${idx})" ${j.vermelho ? 'disabled' : ''}>🟨</button>
+                                <button title="Vermelho" onclick="cartaoVermelho('${time}', ${idx})" ${j.vermelho ? 'disabled' : ''}>🟥</button>
+                                <button title="Substituir" onclick="substituirJogador('${time}', ${idx})">🔄</button>
+                            </td>
+                        </tr>
+                    `;
+                }).join('');
+
+                document.getElementById(`cartoesResumo${time}`).innerHTML = `🟨 ${amarelos} &nbsp;|&nbsp; 🟥 ${vermelhos}`;
+            });
+        }
+
+        function adicionarJogador(time) {
+            const num = document.getElementById(`numJog${time}`).value;
+            const nome = document.getElementById(`nomeJog${time}`).value.trim();
+            const pos = document.getElementById(`posJog${time}`).value;
+            if (!num || !nome) return alert("Informe o número e o nome do atleta.");
+
+            jogadores[time].push({ num: parseInt(num), nome, pos, gols: 0, amarelo: 0, vermelho: false, emCampo: true });
+            document.getElementById(`numJog${time}`).value = '';
+            document.getElementById(`nomeJog${time}`).value = '';
+            renderizarElencos();
+        }
+
+        function golJogador(time, idx) {
+            const j = jogadores[time][idx];
+            j.gols++;
+            alterarGol(time, 1, `#${j.num} ${j.nome}`);
+            renderizarElencos();
+        }
+
+        function cartaoAmarelo(time, idx) {
+            const j = jogadores[time][idx];
+            const nomeTime = document.getElementById(`nomeTime${time}`).value;
+            j.amarelo++;
+            if (j.amarelo >= 2) {
+                j.vermelho = true;
+                j.emCampo = false;
+                registrarEvento(`🟨🟥 EXPULSÃO (2º Amarelo)! #${j.num} ${j.nome} (${nomeTime})`);
+            } else {
+                registrarEvento(`🟨 Cartão Amarelo para #${j.num} ${j.nome} (${nomeTime})`);
+            }
+            renderizarElencos();
+        }
+
+        function cartaoVermelho(time, idx) {
+            const j = jogadores[time][idx];
+            const nomeTime = document.getElementById(`nomeTime${time}`).value;
+            j.vermelho = true;
+            j.emCampo = false;
+            registrarEvento(`🟥 CARTÃO VERMELHO DIRETO! #${j.num} ${j.nome} (${nomeTime})`);
+            renderizarElencos();
+        }
+
+        function substituirJogador(time, idx) {
+            const j = jogadores[time][idx];
+            const nomeTime = document.getElementById(`nomeTime${time}`).value;
+            j.emCampo = !j.emCampo;
+            registrarEvento(`🔄 Substituição (${nomeTime}): #${j.num} ${j.nome} ${j.emCampo ? 'ENTROU' : 'SAIU'}`);
+            renderizarElencos();
+        }
+
+        // SCOUT & POSSE
+        function selecionarPosse(time) {
+            posseAtual = time;
+            document.getElementById('btnPosseA').classList.toggle('active-a', time === 'A');
+            document.getElementById('btnPosseB').classList.toggle('active-b', time === 'B');
+        }
+
+        function atualizarBarraPosse() {
+            const total = segPosse.A + segPosse.B;
+            const pctA = Math.round((segPosse.A / total) * 100);
+            const pctB = 100 - pctA;
+
+            const nomeA = document.getElementById('nomeTimeA').value;
+            const nomeB = document.getElementById('nomeTimeB').value;
+
+            document.getElementById('posseLabelA').textContent = `${nomeA}: ${pctA}%`;
+            document.getElementById('posseLabelB').textContent = `${nomeB}: ${pctB}%`;
+            document.getElementById('barraPosseA').style.width = `${pctA}%`;
+            document.getElementById('barraPosseB').style.width = `${pctB}%`;
+        }
+
+        function alterarScout(metrica, time, delta) {
+            estado.scout[metrica][time] = Math.max(0, estado.scout[metrica][time] + delta);
+            document.getElementById(`${metrica}${time}`).textContent = estado.scout[metrica][time];
+        }
+
+        // PRANCHETA TÁTICA
+        const formacoes = {
+            "4-3-3": [
+                { n: 1, x: 7, y: 50 },
+                { n: 2, x: 25, y: 15 }, { n: 3, x: 22, y: 38 }, { n: 4, x: 22, y: 62 }, { n: 6, x: 25, y: 85 },
+                { n: 5, x: 42, y: 50 }, { n: 8, x: 52, y: 30 }, { n: 10, x: 52, y: 70 },
+                { n: 7, x: 75, y: 18 }, { n: 9, x: 82, y: 50 }, { n: 11, x: 75, y: 82 }
+            ],
+            "4-4-2": [
+                { n: 1, x: 7, y: 50 },
+                { n: 2, x: 24, y: 15 }, { n: 3, x: 22, y: 38 }, { n: 4, x: 22, y: 62 }, { n: 6, x: 24, y: 85 },
+                { n: 7, x: 50, y: 18 }, { n: 5, x: 48, y: 40 }, { n: 8, x: 48, y: 60 }, { n: 11, x: 50, y: 82 },
+                { n: 9, x: 76, y: 36 }, { n: 10, x: 76, y: 64 }
+            ],
+            "3-5-2": [
+                { n: 1, x: 7, y: 50 },
+                { n: 3, x: 22, y: 25 }, { n: 4, x: 20, y: 50 }, { n: 5, x: 22, y: 75 },
+                { n: 2, x: 48, y: 12 }, { n: 8, x: 44, y: 35 }, { n: 10, x: 55, y: 50 }, { n: 7, x: 44, y: 65 }, { n: 6, x: 48, y: 88 },
+                { n: 9, x: 78, y: 36 }, { n: 11, x: 78, y: 64 }
+            ],
+            "4-2-3-1": [
+                { n: 1, x: 7, y: 50 },
+                { n: 2, x: 24, y: 15 }, { n: 3, x: 22, y: 38 }, { n: 4, x: 22, y: 62 }, { n: 6, x: 24, y: 85 },
+                { n: 5, x: 40, y: 36 }, { n: 8, x: 40, y: 64 },
+                { n: 7, x: 60, y: 20 }, { n: 10, x: 62, y: 50 }, { n: 11, x: 60, y: 80 },
+                { n: 9, x: 82, y: 50 }
+            ]
+        };
+
+        function aplicarFormacao() {
+            const esquema = document.getElementById('esquemaTatico').value;
+            const layer = document.getElementById('pitchPlayersLayer');
+            layer.innerHTML = formacoes[esquema].map(p =>
+                `<div class="pitch-player" style="left: ${p.x}%; top: ${p.y}%;">${p.n}</div>`
+            ).join('');
+        }
+
+        function moverBola(e) {
+            const pitch = document.getElementById('soccerPitch');
+            const rect = pitch.getBoundingClientRect();
+            const x = ((e.clientX - rect.left) / rect.width) * 100;
+            const y = ((e.clientY - rect.top) / rect.height) * 100;
+            const ball = document.getElementById('pitchBall');
+            ball.style.left = `${x}%`;
+            ball.style.top = `${y}%`;
+        }
+
+        // SÚMULA OFICIAL
+        function gerarSumulaOficial() {
+            const torneio = document.getElementById('nomeTorneio').value;
+            const timeA = document.getElementById('nomeTimeA').value;
+            const timeB = document.getElementById('nomeTimeB').value;
+            const arbitro = document.getElementById('arbitroNome').value || "Não informado";
+            const local = document.getElementById('localJogo').value || "Arena Principal";
+            const obs = document.getElementById('obsSumula').value;
+
+            const totalPosse = segPosse.A + segPosse.B;
+            const pctA = Math.round((segPosse.A / totalPosse) * 100);
+            const pctB = 100 - pctA;
+
+            const historico = eventosPartida.length > 0
+                ? eventosPartida.slice().reverse().join('\n')
+                : "Nenhum evento registrado.";
+
+            const textoSumula =
+`====================================================
+         ARENA PRO - SÚMULA DIGITAL OFICIAL
+====================================================
+COMPETIÇÃO:   ${torneio}
+LOCAL:        ${local}
+ÁRBITRO:      ${arbitro}
+TEMPO JOGADO: ${formatarTempo(segundosTotais)} (+${acrescimos} min acréscimos)
+----------------------------------------------------
+PLACAR FINAL:
+  ${timeA.padEnd(22, ' ')} ${estado.placar.A} x ${estado.placar.B}   ${timeB}
+----------------------------------------------------
+ESTATÍSTICAS COMPARATIVAS:
+  Posse de Bola:      ${pctA}%   |   ${pctB}%
+  Finalizações:       ${estado.scout.chutes.A}     |   ${estado.scout.chutes.B}
+  Chutes no Gol:      ${estado.scout.chutesGol.A}     |   ${estado.scout.chutesGol.B}
+  Defesas Goleiro:    ${estado.scout.defesas.A}     |   ${estado.scout.defesas.B}
+  Escanteios:         ${estado.escanteios.A}     |   ${estado.escanteios.B}
+  Faltas Cometidas:   ${estado.faltas.A}     |   ${estado.faltas.B}
+  Impedimentos:       ${estado.scout.impedimentos.A}     |   ${estado.scout.impedimentos.B}
+----------------------------------------------------
+CRONOLOGIA DOS EVENTOS:
+${historico}
+----------------------------------------------------
+RELATÓRIO DA ARBITRAGEM:
+${obs}
+====================================================
+Documento autenticado pelo Sistema Arena Pro Control.`;
+
+            document.getElementById('sumulaOutput').textContent = textoSumula;
+
+            // Envia ao servidor Java caso esteja rodando em http://localhost:8080
+            fetch('/api/salvar-sumula', {
+                method: 'POST',
+                headers: { 'Content-Type': 'text/plain; charset=UTF-8' },
+                body: textoSumula
+            }).then(r => {
+                if (r.ok) return r.text();
+            }).then(msg => {
+                if (msg) alert("✅ " + msg);
+            }).catch(() => {});
+        }
+
+        function copiarSumula() {
+            const texto = document.getElementById('sumulaOutput').textContent;
+            navigator.clipboard.writeText(texto);
+            alert("Súmula copiada para a área de transferência!");
+        }
+
+        // Inicialização
+        renderizarElencos();
+        aplicarFormacao();
+        atualizarBarraPosse();
     </script>
 </body>
 </html>
